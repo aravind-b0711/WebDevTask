@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--
+        A div tag is used to tag a section or division of your code
+    -->
+    <div class="heading">Survey Form</div>
+    <div class="form-details">
+      <form>
+        <!--
+            It is a good coding practice to include the input tags within the label tags
+        -->
+        <label for="Name Input" class=""
+          >Name<br />
+          <input type="text" class="input" id="name" /><br />
+        </label>
+        <label for="dobInput"
+          >Date of Birth<br />
+          <input type="date" class="input" id="dob" /><br />
+        </label>
+        <label for="Gender Input" class="">Gender<br /> </label>
+        <label>
+          <input
+            type="radio"
+            class="input"
+            name="gender"
+            value="male"
+          />Male<br />
+        </label>
+        <label>
+          <input
+            type="radio"
+            class="input"
+            name="gender"
+            value="female"
+          />Female<br />
+        </label>
+        <label for="emailInput"
+          >email<br />
+          <input type="email" class="input" id="'email" /><br />
+        </label>
+        <label for="Educational Qualification" class=""
+          >Educational Qualification:</label
+        >
+        <select id="Educational Qualification" name="Educational Qualification">
+          <option value="Middle School">Middle School</option>
+          <option value="Secondary School">Secondary School</option>
+          <option value="High School">High School</option>
+          <option value="Bachelors">Bachelors</option>
+        </select>
+        <br />
+        <br />
+        <label for="Interests" class="">Interests:</label>
+        <label>
+          <input
+            type="checkbox"
+            name="Interests"
+            value="Reading Novels"
+          />Reading Novels<br />
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="Interests"
+            value="Engaging in Sports"
+          />Engaging in Sports<br />
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            name="Interests"
+            value="Playing Instruments"
+          />Playing Instruments<br />
+        </label>
+
+        <!--
+            id tags are used to refer to the java script file (usually to a function, such as a pop up appearing
+            when the submit button is clicked)
+        -->
+        <label for="q1"
+          >Brief about your current technical knowledge:<br />
+          <textarea name="ans1" id="curKnowledge" cols="35" rows="5"></textarea>
+        </label>
+        <br />
+        <label for="q1"
+          >What do you aim to achieve?<br />
+          <textarea name="ans2" id="aim" cols="35" rows="5"></textarea>
+        </label>
+        <br />
+        <label for="q1" class="input"
+          >Describe your dream project:<br />
+          <textarea name="ans3" id="dreamProject" cols="35" rows="5"></textarea>
+        </label>
+        <br />
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
